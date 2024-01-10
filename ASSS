@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int Sum;
+
+void SumM(int Mt[], int N) {
+    int I = 0;
+    Sum = 0;
+    while (I < N) {
+        Sum += Mt[I];
+        I++;
+    }
+}
+
+int main() {
+    cout << "Welcome" << endl;
+    int A[5];
+    int I = 0;
+    while (I < 5) {
+        cout << "Please Enter Integer at index " << I << endl;
+        cin >> A[I];
+        I++;
+    }
+    SumM(A, 5);
+    cout << "Total: " << Sum << endl;
+    return 0;
+}
